@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////data/payments.db
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET:-}
+    volumes:
+      - payments:/data
+volumes:
+  payments:

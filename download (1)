@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.venv/
+*.db
+*.sqlite3
+.idea/
+.DS_Store
+.ruff_cache/
+webhook.json
+payment.json
